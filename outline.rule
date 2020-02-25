@@ -1,0 +1,10 @@
+;Mode=RegexReplace
+;RegexOption=i
+^(program)\s+(\w+)\b /// ${1} ${2} /// program unit,Lv=1
+^(module)\s+(\w+)\b /// ${1} ${2} /// program unit,Lv=1
+^(submodule)\s*(\(.*\))\s*(\w+)\b /// ${1} ${2} ${3} /// program unit,Lv=1
+^(block ?data)\b\s*(\w*)\b /// ${1} ${2} /// program unit,Lv=1
+^[a-z].*\s(function)\s+(\w+)\s*\(.*\) /// ${1} - ${2} /// program unit,Lv=1
+^[a-z](?!.*\bend\s+subroutine).*\s(subroutine)\s+(\w+) /// ${1} - ${2} /// program unit,Lv=1
+^\s.*\s(function)\s+(\w+)\s*\(.*\) /// ${1} - ${2} /// inner procedure,Lv=2
+^\s(?!.*\bend\s+subroutine).*\s(subroutine)\s+(\w+) /// ${1} - ${2} /// inner procedure,Lv=2

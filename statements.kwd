@@ -1,0 +1,186 @@
+// Fortran 2018 keywords
+// Preprocessor directives and Fortran statements
+// The obsolescent statements are disabled
+// CASE=False
+
+// Preprocessor directives
+#define
+#if
+#endif
+#else
+#elif
+#ifdef
+#ifndef
+#undef
+
+include
+
+// Program units
+program
+endprogram
+function
+endfunction
+subroutine
+endsubroutine
+module
+endmodule
+submodule
+endsubmodule
+//block data
+//blockdata
+//endblockdata
+
+contains
+end
+
+// Procedure
+call
+interface
+endinterface
+abstract interface
+module procedure
+endprocedure
+generic
+external
+elemental
+impure
+non_recursive
+pure
+recursive
+result
+
+// Types
+integer
+real
+double precision
+doubleprecision
+complex
+character
+logical
+
+kind
+len
+
+type
+endtype
+class
+extends
+
+enum
+endenum
+enumerator
+
+// Attributes
+public
+private
+allocatable
+asynchronous
+codimension
+contiguous
+dimension
+external
+intent
+intrinsic
+bind
+optional
+parameter
+pointer
+protected
+save
+target
+value
+volatile
+
+// Constructs
+associate
+endassociate
+block
+endblock
+change team
+end team
+endteam
+critical
+endcritical
+do
+enddo
+while
+concurrent
+if
+endif
+then
+else
+else if
+elseif
+select case
+selectcase
+case
+select rank
+rank
+select type
+selecttype
+endselect
+type is
+class is
+default
+cycle
+exit
+
+where
+endwhere
+else where
+elsewhere
+//forall
+//endforall
+
+// Input/output
+open
+close
+read
+write
+print
+wait
+backspace
+end file
+endfile
+rewind
+flush
+inquire
+format
+
+// Other statements
+use
+only
+intrinsic
+non_intrinsic
+operator
+import
+implicit
+implicit none
+format
+data
+namelist
+go to
+goto
+continue
+return
+stop
+error stop
+
+allocate
+nullify
+deallocate
+
+fail image
+sync all
+sync images
+sync memory
+sync team
+event post
+event wait
+form team
+lock
+unlock
+
+//entry
+//equivalence
+//common

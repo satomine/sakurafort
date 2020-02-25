@@ -1,0 +1,13 @@
+﻿// Regex keywords
+
+// Double precision literals
+// Integer literals
+// logical literals
+// Real literals with a decimal point
+// Real literals without a decimal point
+
+RxKey[000]=NUM,/(?<!\w|\.)[-+]?([0-9]+(\.[0-9]*)?|\.[0-9]+)d[-+]?[0-9]+(_([0-9]+|[a-z]\w*))?(?!\w|\.)/ki
+RxKey[001]=NUM,/(?<!\w|\.)[-+]?[0-9]+(_([0-9]+|[a-z]\w*))?(?!\w|\.)/ki
+RxKey[002]=NUM,/(\.true\.|\.false\.)/ki
+RxKey[003]=RK1,/(?<!\w|\.)[-+]?([0-9]+\.[0-9]*|\.[0-9]+)(e[-+]?[0-9]+)?(_([0-9]+|[a-z]\w*))?(?!\w|\.)/ki
+RxKey[004]=RK1,/(?<!\w|\.)[-+]?[0-9]+e[-+]?[0-9]+(_([0-9]+|[a-z]\w*))?(?!\w|\.)/ki
